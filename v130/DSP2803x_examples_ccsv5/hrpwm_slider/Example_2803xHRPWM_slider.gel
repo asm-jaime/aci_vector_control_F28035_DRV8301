@@ -1,0 +1,22 @@
+/*
+// TI File $Revision: /main/4 $
+// Checkin $Date: June 29, 2010   09:55:19 $
+//###########################################################################
+//
+// This .gel file can be used to help demonstrate the example project.
+//
+//###########################################################################
+// $TI Release: F2803x C/C++ Header Files and Peripheral Examples V130 $
+// $Release Date: May  8, 2015 $
+// $Copyright: Copyright (C) 2009-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+*/
+
+menuitem "DSP2803x HRPWM FineDutySlider"
+slider FineDutySlider(1, 254, 1, 1, finedutyvalue)
+{
+
+ DutyFine = finedutyvalue;
+}
+

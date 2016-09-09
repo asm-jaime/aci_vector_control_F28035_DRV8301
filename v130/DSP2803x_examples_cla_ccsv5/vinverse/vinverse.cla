@@ -1,0 +1,72 @@
+//###########################################################################
+// Description:
+//
+// Task 1: calculates the element-wise inverse of a vector
+// Task 2: calculates the element-wise inverse of a vector
+//         and saves the result in the same vector
+//
+//###########################################################################
+// $TI Release: F2803x C/C++ Header Files and Peripheral Examples V130 $
+// $Release Date: May  8, 2015 $
+// $Copyright: Copyright (C) 2009-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+// Include the test header file whose name is based on the test name
+// which is defined by the macro TEST on the command line
+#include XSTRINGIZE(XCONCAT(TEST_NAME,_shared.h))
+
+//Task 1 : divide each element into 1
+__interrupt void Cla1Task1 ( void )
+{
+  int32 index;
+  //  
+  // Copy the vector to cla to cpu message RAM
+  //
+  for(index=0; index < LENGTH1; index++)
+  {
+     vector1_inverse[index] = vector1[index];
+  }
+   for(index = LENGTH1 - 1; index >= 0 ; index--)
+   {
+       vector1_inverse[index] = 1.0/vector1[index];
+   } 
+}
+//
+// Task 2 : Same as Task 1 except the input vector is the output vector
+//          (data RAM instead of message RAM)
+//
+__interrupt void Cla1Task2 ( void )
+{
+  int32 index;
+   for(index = LENGTH2 - 1; index >= 0 ; index--)
+   {
+       vector2[index] = 1.0/vector2[index];
+   } 
+}
+__interrupt void Cla1Task3 ( void )
+{
+	
+}
+__interrupt void Cla1Task4 ( void )
+{
+	
+}
+__interrupt void Cla1Task5 ( void )
+{
+	
+}
+__interrupt void Cla1Task6 ( void )
+{
+	
+}
+__interrupt void Cla1Task7 ( void )
+{
+	
+}
+__interrupt void Cla1Task8 ( void )
+{
+	
+}
+

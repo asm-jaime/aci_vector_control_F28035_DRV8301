@@ -1,0 +1,53 @@
+//###########################################################################
+// Description:
+//
+// Task 1: Calculate the square root of a number using
+// multiple iterations of the Newton-Raphson approximation
+//
+//###########################################################################
+// $TI Release: F2803x C/C++ Header Files and Peripheral Examples V130 $
+// $Release Date: May  8, 2015 $
+// $Copyright: Copyright (C) 2009-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+// Include the test header file whose name is based on the test name
+// which is defined by the macro TEST on the command line
+#include XSTRINGIZE(XCONCAT(TEST_NAME,_shared.h))
+
+//Task 1 :y = sqrt(x)
+__interrupt void Cla1Task1 ( void )
+{
+    fResult = __sqrt(fVal);
+}
+
+__interrupt void Cla1Task2 ( void )
+{
+	
+}
+__interrupt void Cla1Task3 ( void )
+{
+	
+}
+__interrupt void Cla1Task4 ( void )
+{
+	
+}
+__interrupt void Cla1Task5 ( void )
+{
+	
+}
+__interrupt void Cla1Task6 ( void )
+{
+	
+}
+__interrupt void Cla1Task7 ( void )
+{
+	
+}
+__interrupt void Cla1Task8 ( void )
+{
+	
+}
+

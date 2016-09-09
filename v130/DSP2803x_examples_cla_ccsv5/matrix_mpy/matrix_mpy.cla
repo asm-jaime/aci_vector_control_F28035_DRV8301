@@ -1,0 +1,65 @@
+//###########################################################################
+// Description:
+//
+// Task 1: Calculate 10^(X)
+//
+//###########################################################################
+// $TI Release: F2803x C/C++ Header Files and Peripheral Examples V130 $
+// $Release Date: May  8, 2015 $
+// $Copyright: Copyright (C) 2009-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+// Include the test header file whose name is based on the test name
+// which is defined by the macro TEST on the command line
+#include XSTRINGIZE(XCONCAT(TEST_NAME,_shared.h))
+
+//Task 1 : Matrix multiply
+__interrupt void Cla1Task1 ( void )
+{
+	//Local Variables
+	float tmp;
+	int i,j,k;
+	
+	__mdebugstop();
+	for(i=0;i<M;i++){
+		for(j=0;j<N;j++){
+            tmp = 0;
+			for(k=0;k<N;k++){
+			  tmp += x[i][k]*y[k][j];
+		      }
+            z[i][j] = tmp;
+			}
+	 }
+}
+
+__interrupt void Cla1Task2 ( void )
+{
+	
+}
+__interrupt void Cla1Task3 ( void )
+{
+	
+}
+__interrupt void Cla1Task4 ( void )
+{
+	
+}
+__interrupt void Cla1Task5 ( void )
+{
+	
+}
+__interrupt void Cla1Task6 ( void )
+{
+	
+}
+__interrupt void Cla1Task7 ( void )
+{
+	
+}
+__interrupt void Cla1Task8 ( void )
+{
+	
+}
+

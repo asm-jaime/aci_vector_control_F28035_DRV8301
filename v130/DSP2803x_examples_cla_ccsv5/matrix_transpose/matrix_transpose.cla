@@ -1,0 +1,60 @@
+//###########################################################################
+// Description:
+//
+// Task 1: Transpose of a 3x3 matrix
+//
+//###########################################################################
+// $TI Release: F2803x C/C++ Header Files and Peripheral Examples V130 $
+// $Release Date: May  8, 2015 $
+// $Copyright: Copyright (C) 2009-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+
+#include "DSP28x_Project.h"
+// Include the test header file whose name is based on the test name
+// which is defined by the macro TEST on the command line
+#include XSTRINGIZE(XCONCAT(TEST_NAME,_shared.h))
+
+//Task 1 : Matrix multiply
+__interrupt void Cla1Task1 ( void )
+{
+	//Local Variables
+	int i,j;
+	
+	__mdebugstop();
+	for(i=0;i<M;i++){
+		for(j=0;j<N;j++){
+            z[j][i] = x[i][j];
+			}
+	 }
+}
+
+__interrupt void Cla1Task2 ( void )
+{
+	
+}
+__interrupt void Cla1Task3 ( void )
+{
+	
+}
+__interrupt void Cla1Task4 ( void )
+{
+	
+}
+__interrupt void Cla1Task5 ( void )
+{
+	
+}
+__interrupt void Cla1Task6 ( void )
+{
+	
+}
+__interrupt void Cla1Task7 ( void )
+{
+	
+}
+__interrupt void Cla1Task8 ( void )
+{
+	
+}
+
