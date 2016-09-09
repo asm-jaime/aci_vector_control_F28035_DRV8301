@@ -4,6 +4,9 @@
 *.obj
 *.elf
 
+Debug
+Release
+
 # Precompiled Headers
 *.gch
 *.pch
