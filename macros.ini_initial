@@ -1,0 +1,6 @@
+
+CONTROLSUITE_DRV830x_ROOT = ../../../
+DRV830x_IQMATH_ROOT = ../../../libs\math\IQmath\v15c
+DRV830x_F2803x_DEVICE_SUPPORT_ROOT = ../../../device_support\f2803x\v124
+DRV830x_F2806x_DEVICE_SUPPORT_ROOT = ../../../device_support\f2806x\v110
+DRV830x_DMCLIB_MATH_BLOCK_ROOT = ../../../libs/app_libs\motor_control\math_blocks\v3.1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PMSM_SD</name>
+	<name>PM_Sensorless</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -8,62 +8,6 @@
 		<buildCommand>
 			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
 			<arguments>
-				<dictionary>
-					<key>?name?</key>
-					<value></value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.append_environment</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildArguments</key>
-					<value>-k</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildCommand</key>
-					<value>${CCS_UTILS_DIR}/bin/gmake</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>${BuildDirectory}</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
-					<value>clean</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.contents</key>
-					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
-					<value>all</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.stopOnError</key>
-					<value>false</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
-					<value>true</value>
-				</dictionary>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
@@ -74,17 +18,74 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>com.ti.ccstudio.core.ccsNature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>com.ti.ccstudio.core.ccsNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
-			<name>F28335_XDS100V3.ccxml</name>
+			<name>DSP2803x_GlobalVariableDefs.c</name>
 			<type>1</type>
-			<location>C:/Users/Administrator.USER-20151105ZB/ti/CCSTargetConfigurations/F28335_XDS100V3.ccxml</location>
+			<locationURI>DRV830x_F2803x_DEVICE_SUPPORT_ROOT/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c</locationURI>
+		</link>
+		<link>
+			<name>DSP2803x_Headers_nonBIOS.cmd</name>
+			<type>1</type>
+			<locationURI>DRV830x_F2803x_DEVICE_SUPPORT_ROOT/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd</locationURI>
+		</link>
+		<link>
+			<name>F2806x_GlobalVariableDefs.c</name>
+			<type>1</type>
+			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_headers/source/F2806x_GlobalVariableDefs.c</locationURI>
+		</link>
+		<link>
+			<name>F2806x_Headers_nonBIOS.cmd</name>
+			<type>1</type>
+			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_headers/cmd/F2806x_Headers_nonBIOS.cmd</locationURI>
+		</link>
+		<link>
+			<name>F2806x_usDelay.asm</name>
+			<type>1</type>
+			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_common/source/F2806x_usDelay.asm</locationURI>
+		</link>
+		<link>
+			<name>IQmath.lib</name>
+			<type>1</type>
+			<locationURI>DRV830x_IQMATH_ROOT/lib/IQmath.lib</locationURI>
+		</link>
+		<link>
+			<name>IQmath_fpu32.lib</name>
+			<type>1</type>
+			<locationURI>DRV830x_IQMATH_ROOT/lib/IQmath_fpu32.lib</locationURI>
+		</link>
+		<link>
+			<name>rts2800_fpu32_fast_supplement.lib</name>
+			<type>1</type>
+			<locationURI>CONTROLSUITE_DRV830x_ROOT/libs/math/FPUfastRTS/V100/lib/rts2800_fpu32_fast_supplement.lib</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>CONTROLSUITE_DRV830x_ROOT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D</value>
+		</variable>
+		<variable>
+			<name>DRV830x_DMCLIB_MATH_BLOCK_ROOT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/app_libs/motor_control/math_blocks/v3.1</value>
+		</variable>
+		<variable>
+			<name>DRV830x_F2803x_DEVICE_SUPPORT_ROOT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/device_support/f2803x/v124</value>
+		</variable>
+		<variable>
+			<name>DRV830x_F2806x_DEVICE_SUPPORT_ROOT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/device_support/f2806x/v110</value>
+		</variable>
+		<variable>
+			<name>DRV830x_IQMATH_ROOT</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/math/IQmath/v15c</value>
+		</variable>
+	</variableList>
 </projectDescription>

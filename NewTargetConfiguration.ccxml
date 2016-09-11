@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+<instance XML_version="1.2" desc="F283x CPU Cycle Accurate Simulator" href="configurations/tisim_f283x.xml" id="F283x CPU Cycle Accurate Simulator" xml="tisim_f283x.xml" xmlpath="configurations"/>
+    <configuration XML_version="1.2" description="Simulates the F283x Core in a cycle accurate manner. Also supports a flat memory system. No peripherals are modeled." id="F283x CPU Cycle Accurate Simulator">
+        <connection XML_version="1.2" desc="F283x CPU Cycle Accurate Simulator_0" id="F283x CPU Cycle Accurate Simulator"/>
+    </configuration>
+</configurations>

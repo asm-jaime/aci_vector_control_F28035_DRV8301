@@ -1,0 +1,1 @@
+"./PM_Sensorless.obj" "./PM_Sensorless-DevInit_F2803x.obj" "./DSP2803x_usDelay.obj" "./DSP2803x_GlobalVariableDefs.obj" "./DRV8301_SPI.obj" "./DLOG4CHC.obj" "Z:/device_support/f2803x/v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd" "../F28035_RAM_PM_Sensorless.CMD" "Z:/libs/math/IQmath/v15c/lib/IQmath.lib" -l"libc.a" 
