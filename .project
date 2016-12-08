@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PM_Sensorless</name>
+	<name>aci_vector_control_F28035_DRV8301</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -28,33 +28,37 @@
 		<link>
 			<name>DSP2803x_GlobalVariableDefs.c</name>
 			<type>1</type>
-			<locationURI>PROJECT_LOC/libs_f2803x_v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c</locationURI>
+			<locationURI>PROJECT_LOC/clang_modules/support_F2803x_v122/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c</locationURI>
 		</link>
 		<link>
 			<name>DSP2803x_Headers_nonBIOS.cmd</name>
 			<type>1</type>
-			<locationURI>PROJECT_LOC/libs_f2803x_v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd</locationURI>
+			<locationURI>PARENT_LOC/clang_modules/support_F2803x_v122/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd</locationURI>
 		</link>
 		<link>
 			<name>IQmath.lib</name>
 			<type>1</type>
-			<locationURI>PROJECT_LOC/libs_iqmath_v15c/lib/IQmath.lib</locationURI>
+			<locationURI>PROJECT_LOC/clang_modules/IQmath_v15c/lib/IQmath.lib</locationURI>
 		</link>
 		<link>
 			<name>IQmath_fpu32.lib</name>
 			<type>1</type>
-			<locationURI>PROJECT_LOC/libs_iqmath_v15c/lib/IQmath_fpu32.lib</locationURI>
+			<locationURI>PROJECT_LOC/clang_modules/IQmath_v15c/lib/IQmath_fpu32.lib</locationURI>
 		</link>
 		<link>
 			<name>rts2800_fpu32_fast_supplement.lib</name>
 			<type>1</type>
-			<locationURI>PROJECT_LOC/libs_rts2800_fpu32/rts2800_fpu32_fast_supplement.lib</locationURI>
+			<locationURI>PROJECT_LOC/clang_modules/libs_rts2800_fpu32/rts2800_fpu32_fast_supplement.lib</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
 		<variable>
 			<name>CONTROLSUITE_DRV830x_ROOT</name>
 			<value>$%7BPARENT-3-PROJECT_LOC%7D</value>
+		</variable>
+		<variable>
+			<name>CONTROLSUITE_DRV8312_ROOT</name>
+			<value>$%7BPARENT-2-CCS_INSTALL_ROOT%7D/controlSUITE</value>
 		</variable>
 		<variable>
 			<name>DRV830x_DMCLIB_MATH_BLOCK_ROOT</name>
@@ -67,6 +71,10 @@
 		<variable>
 			<name>DRV830x_IQMATH_ROOT</name>
 			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/math/IQmath/v15c</value>
+		</variable>
+		<variable>
+			<name>copy_PROJECT_LOC</name>
+			<value>$%7BCONTROLSUITE_DRV830x_ROOT%7D/aci_vector_control_F28035_DRV8301</value>
 		</variable>
 	</variableList>
 </projectDescription>
