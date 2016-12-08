@@ -98,4 +98,11 @@ S64_DEPS__QUOTED :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
+libs_rts2800_fpu32 \
+libs_iqmath_v15c/lib \
+libs_f2803x_v124/DSP2803x_headers/source \
+libs_f2803x_v124/DSP2803x_headers/cmd \
+libs_f2803x_v124/DSP2803x_common/source \
+libs_f2803x_v124/DSP2803x_common/lib \
+libs_f2803x_v124/DSP2803x_common/cmd \
 

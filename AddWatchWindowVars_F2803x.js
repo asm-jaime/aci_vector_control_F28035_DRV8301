@@ -21,5 +21,3 @@ expAdd "speed3.EstimatedSpeed" getQValue(24)
 expAdd "pid1_spd.param.Kp" getQValue(24)
 expAdd "pid1_spd.param.Ki" getQValue(24)
 expAdd "dlog.prescalar" getNatural()
-
-

@@ -34,21 +34,6 @@
 			<locationURI>DRV830x_IQMATH_ROOT/lib/IQmath.lib</locationURI>
 		</link>
 		<link>
-			<name>F2806x_GlobalVariableDefs.c</name>
-			<type>1</type>
-			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_headers/source/F2806x_GlobalVariableDefs.c</locationURI>
-		</link>
-		<link>
-			<name>F2806x_usDelay.asm</name>
-			<type>1</type>
-			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_common/source/F2806x_usDelay.asm</locationURI>
-		</link>
-		<link>
-			<name>F2806x_Headers_nonBIOS.cmd</name>
-			<type>1</type>
-			<locationURI>DRV830x_F2806x_DEVICE_SUPPORT_ROOT/F2806x_headers/cmd/F2806x_Headers_nonBIOS.cmd</locationURI>
-		</link>
-		<link>
 			<name>IQmath_fpu32.lib</name>
 			<type>1</type>
 			<locationURI>DRV830x_IQMATH_ROOT/lib/IQmath_fpu32.lib</locationURI>

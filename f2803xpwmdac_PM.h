@@ -1,17 +1,17 @@
 /* ==================================================================================
-File name:        F2803XPWMDAC_PM.H                     
-                    
+File name:        F2803XPWMDAC_PM.H
+
 Originator:	Digital Control Systems Group
 			Texas Instruments
-Description:  
+Description:
  Header file containing data type, object, macro definitions and initializers
- This file is specific to "DRV8301" kit and configure PWM 4A, 5A, 6A & PWM 6B as DAC pins 
+ This file is specific to "DRV8301" kit and configure PWM 4A, 5A, 6A & PWM 6B as DAC pins
 
 Target: TMS320F280x family
 =====================================================================================
 History:
 -------------------------------------------------------------------------------------
- 02-07-2010	Version 1.0 
+ 02-07-2010	Version 1.0
 ------------------------------------------------------------------------------------*/
 
 #ifndef __F280X_PWMDAC_H__
@@ -20,7 +20,7 @@ History:
 #include "f2803xbmsk.h"
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Time-Base Control Registers for PWM Generation. 
+Initialization constant for the F280X Time-Base Control Registers for PWM Generation.
 Sets up the timer to run free upon emulation suspend, count up-down mode
 prescaler 1.
 ----------------------------------------------------------------------------*/
@@ -33,7 +33,7 @@ prescaler 1.
                             CNTLD_DISABLE )
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Compare Control Register. 
+Initialization constant for the F280X Compare Control Register.
 ----------------------------------------------------------------------------*/
 #define PWMDAC_CMPCTL_INIT_STATE ( LOADAMODE_ZRO + \
                                    LOADBMODE_ZRO + \
@@ -41,44 +41,44 @@ Initialization constant for the F280X Compare Control Register.
                                    SHDWBMODE_SHADOW )
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Action Qualifier Output A Register. 
+Initialization constant for the F280X Action Qualifier Output A Register.
 ----------------------------------------------------------------------------*/
 #define PWMDAC_AQCTLA_INIT_STATE ( CAD_SET + CAU_CLEAR )
 #define PWMDAC_AQCTLB_INIT_STATE ( CBD_SET + CBU_CLEAR )
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Dead-Band Generator registers for PWM Generation. 
+Initialization constant for the F280X Dead-Band Generator registers for PWM Generation.
 Sets up the dead band for PWMDAC and sets up dead band values.
 ----------------------------------------------------------------------------*/
-#define PWMDAC_DBCTL_INIT_STATE   BP_DISABLE 
+#define PWMDAC_DBCTL_INIT_STATE   BP_DISABLE
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X PWM Chopper Control register for PWM Generation. 
+Initialization constant for the F280X PWM Chopper Control register for PWM Generation.
 ----------------------------------------------------------------------------*/
 #define  PWMDAC_PCCTL_INIT_STATE  CHPEN_DISABLE
 
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Trip Zone Select Register 
+Initialization constant for the F280X Trip Zone Select Register
 ----------------------------------------------------------------------------*/
 #define  PWMDAC_TZSEL_INIT_STATE  DISABLE_TZSEL
-              
+
 /*----------------------------------------------------------------------------
-Initialization constant for the F280X Trip Zone Control Register 
+Initialization constant for the F280X Trip Zone Control Register
 ----------------------------------------------------------------------------*/
 #define  PWMDAC_TZCTL_INIT_STATE ( TZA_HI_Z + TZB_HI_Z + \
                                    DCAEVT1_HI_Z + DCAEVT2_HI_Z + \
                                    DCBEVT1_HI_Z + DCBEVT2_HI_Z )
 
 /*-----------------------------------------------------------------------------
-Define the structure of the PWMDAC Driver Object 
+Define the structure of the PWMDAC Driver Object
 -----------------------------------------------------------------------------*/
-typedef struct {   
-  	int16 *PwmDacInPointer0;   	// Input: Pointer to source data output on PWMDAC channel 0 
-	int16 *PwmDacInPointer1;    // Input: Pointer to source data output on PWMDAC channel 1 
+typedef struct {
+  	int16 *PwmDacInPointer0;   	// Input: Pointer to source data output on PWMDAC channel 0
+	int16 *PwmDacInPointer1;    // Input: Pointer to source data output on PWMDAC channel 1
 	int16 *PwmDacInPointer2;    // Input: Pointer to source data output on PWMDAC channel 2
-	int16 *PwmDacInPointer3;    // Input: Pointer to source data output on PWMDAC channel 3  
-	Uint16 PeriodMax;     		// Parameter: PWMDAC half period in number of clocks  (Q0) 
- 	} PWMDAC ;          
+	int16 *PwmDacInPointer3;    // Input: Pointer to source data output on PWMDAC channel 3
+	Uint16 PeriodMax;     		// Parameter: PWMDAC half period in number of clocks  (Q0)
+ 	} PWMDAC ;
 
 /*-----------------------------------------------------------------------------
 Define a PWMDAC_handle
@@ -86,7 +86,7 @@ Define a PWMDAC_handle
 typedef PWMDAC *PWMDAC_handle;
 
 /*------------------------------------------------------------------------------
-Default Initializers for the F280X PWMGEN Object 
+Default Initializers for the F280X PWMGEN Object
 ------------------------------------------------------------------------------*/
 #define F280X_PWMDAC_DEFAULTS   { (int16 *)0x300, \
                                   (int16 *)0x300, \
@@ -94,7 +94,7 @@ Default Initializers for the F280X PWMGEN Object
 								  (int16 *)0x300, \
                                   500,         \
                                  }
-                                 
+
 #define PWMDAC_DEFAULTS     F280X_PWMDAC_DEFAULTS
 
 /*------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ Default Initializers for the F280X PWMGEN Object
 
 
 
-	int32 TmpD;    
+	int32 TmpD;
 
 #define PWMDAC_MACRO(v)																						\
 																											\

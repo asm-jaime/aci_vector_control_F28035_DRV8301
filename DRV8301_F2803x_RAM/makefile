@@ -8,15 +8,62 @@ CG_TOOL_ROOT := D:/CCS5/ccsv5/tools/compiler/c2000_6.2.0
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_usDelay.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_TempSensorConv.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_SysCtrl.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Spi.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Sci.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_SWPrioritizedPieVect.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_SWPrioritizedDefaultIsr.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_PieVect.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_PieCtrl.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_OscComp.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_MemCopy.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Lin.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_I2C.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Gpio.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_EQep.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_EPwm.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_ECap.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_ECan.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_DisInt.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_DefaultIsr.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_DBGIER.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_CpuTimers.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Comp.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_CodeStartBranch.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_CSMPasswords.obj" \
+"./libs_f2803x_v124/DSP2803x_common/source/DSP2803x_Adc.obj" \
+"./libs_f2803x_v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.obj" \
 "./PM_Sensorless.obj" \
 "./PM_Sensorless-DevInit_F2803x.obj" \
 "./DSP2803x_usDelay.obj" \
 "./DSP2803x_GlobalVariableDefs.obj" \
 "./DRV8301_SPI.obj" \
 "./DLOG4CHC.obj" \
-"Z:/device_support/f2803x/v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd" \
+"../libs_f2803x_v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd" \
 "../F28035_RAM_PM_Sensorless.CMD" \
-"Z:/libs/math/IQmath/v15c/lib/IQmath.lib" \
+"../libs_iqmath_v15c/lib/IQmath.lib" \
+"../libs_rts2800_fpu32/rts2800_fpu32_fast_supplement.lib" \
+"../libs_iqmath_v15c/lib/IQmath_fpu32.lib" \
+"../libs_f2803x_v124/DSP2803x_headers/cmd/DSP2803x_Headers_BIOS.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/lib/IQmath.lib" \
+"../libs_f2803x_v124/DSP2803x_common/lib/SFO_TI_Build_V6.lib" \
+"../libs_f2803x_v124/DSP2803x_common/lib/SFO_TI_Build_V6b.lib" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28030_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28031_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28032_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28033_RAM_CLA_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28033_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28034_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28035_RAM_CLA_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/28035_RAM_lnk.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28030.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28031.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28032.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28033.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28034.cmd" \
+"../libs_f2803x_v124/DSP2803x_common/cmd/F28035.cmd" \
 -l"libc.a" \
 
 -include ../makefile.init
@@ -27,7 +74,21 @@ RMDIR := RMDIR /S/Q
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include libs_rts2800_fpu32/subdir_vars.mk
+-include libs_iqmath_v15c/lib/subdir_vars.mk
+-include libs_f2803x_v124/DSP2803x_headers/source/subdir_vars.mk
+-include libs_f2803x_v124/DSP2803x_headers/cmd/subdir_vars.mk
+-include libs_f2803x_v124/DSP2803x_common/source/subdir_vars.mk
+-include libs_f2803x_v124/DSP2803x_common/lib/subdir_vars.mk
+-include libs_f2803x_v124/DSP2803x_common/cmd/subdir_vars.mk
 -include subdir_rules.mk
+-include libs_rts2800_fpu32/subdir_rules.mk
+-include libs_iqmath_v15c/lib/subdir_rules.mk
+-include libs_f2803x_v124/DSP2803x_headers/source/subdir_rules.mk
+-include libs_f2803x_v124/DSP2803x_headers/cmd/subdir_rules.mk
+-include libs_f2803x_v124/DSP2803x_common/source/subdir_rules.mk
+-include libs_f2803x_v124/DSP2803x_common/lib/subdir_rules.mk
+-include libs_f2803x_v124/DSP2803x_common/cmd/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -129,9 +190,11 @@ PM_Sensorless_DRV8301_F2803x.out: $(OBJS) $(CMD_SRCS) $(CMD_UPPER_SRCS) $(LIB_SR
 # Other Targets
 clean:
 	-$(RM) $(C2000_EXECUTABLE_OUTPUTS__QUOTED) "PM_Sensorless_DRV8301_F2803x.out"
-	-$(RM) "DRV8301_SPI.pp" "DSP2803x_GlobalVariableDefs.pp" "PM_Sensorless-DevInit_F2803x.pp" "PM_Sensorless.pp" 
-	-$(RM) "DLOG4CHC.obj" "DRV8301_SPI.obj" "DSP2803x_GlobalVariableDefs.obj" "DSP2803x_usDelay.obj" "PM_Sensorless-DevInit_F2803x.obj" "PM_Sensorless.obj" 
-	-$(RM) "DLOG4CHC.pp" "DSP2803x_usDelay.pp" 
+	-$(RM) "DRV8301_SPI.pp" "DSP2803x_GlobalVariableDefs.pp" "PM_Sensorless-DevInit_F2803x.pp" "PM_Sensorless.pp" "libs_f2803x_v124\DSP2803x_headers\source\DSP2803x_GlobalVariableDefs.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Adc.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Comp.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CpuTimers.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DefaultIsr.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_ECan.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_ECap.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_EPwm.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_EQep.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Gpio.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_I2C.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Lin.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_MemCopy.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_OscComp.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_PieCtrl.pp" 
+	-$(RM) "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_PieVect.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SWPrioritizedDefaultIsr.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SWPrioritizedPieVect.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Sci.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Spi.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SysCtrl.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_TempSensorConv.pp" 
+	-$(RM) "DLOG4CHC.obj" "DRV8301_SPI.obj" "DSP2803x_GlobalVariableDefs.obj" "DSP2803x_usDelay.obj" "PM_Sensorless-DevInit_F2803x.obj" "PM_Sensorless.obj" "libs_f2803x_v124\DSP2803x_headers\source\DSP2803x_GlobalVariableDefs.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Adc.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CSMPasswords.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CodeStartBranch.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Comp.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CpuTimers.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DBGIER.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DefaultIsr.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DisInt.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_ECan.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_ECap.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_EPwm.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_EQep.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Gpio.obj" 
+	-$(RM) "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_I2C.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Lin.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_MemCopy.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_OscComp.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_PieCtrl.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_PieVect.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SWPrioritizedDefaultIsr.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SWPrioritizedPieVect.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Sci.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_Spi.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_SysCtrl.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_TempSensorConv.obj" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_usDelay.obj" 
+	-$(RM) "DLOG4CHC.pp" "DSP2803x_usDelay.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CSMPasswords.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_CodeStartBranch.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DBGIER.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_DisInt.pp" "libs_f2803x_v124\DSP2803x_common\source\DSP2803x_usDelay.pp" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CMD_SRCS += \
-Z:/device_support/f2803x/v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd 
+../libs_f2803x_v124/DSP2803x_headers/cmd/DSP2803x_Headers_nonBIOS.cmd 
 
 CMD_UPPER_SRCS += \
 ../F28035_RAM_PM_Sensorless.CMD 
 
 LIB_SRCS += \
-Z:/libs/math/IQmath/v15c/lib/IQmath.lib 
+../libs_iqmath_v15c/lib/IQmath.lib 
 
 ASM_SRCS += \
 ../DLOG4CHC.asm \
@@ -18,7 +18,7 @@ ASM_SRCS += \
 
 C_SRCS += \
 ../DRV8301_SPI.c \
-Z:/device_support/f2803x/v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c \
+../libs_f2803x_v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c \
 ../PM_Sensorless-DevInit_F2803x.c \
 ../PM_Sensorless.c 
 
@@ -64,7 +64,7 @@ ASM_SRCS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../DRV8301_SPI.c" \
-"Z:/device_support/f2803x/v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c" \
+"../libs_f2803x_v124/DSP2803x_headers/source/DSP2803x_GlobalVariableDefs.c" \
 "../PM_Sensorless-DevInit_F2803x.c" \
 "../PM_Sensorless.c" 
 
