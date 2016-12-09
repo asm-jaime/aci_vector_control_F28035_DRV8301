@@ -22,6 +22,9 @@
 *.idb
 *.pdb
 
+#useless project files
+.project_initial
+
 # folders
 .launches
 .settings

@@ -53,28 +53,8 @@
 	</linkedResources>
 	<variableList>
 		<variable>
-			<name>CONTROLSUITE_DRV830x_ROOT</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D</value>
-		</variable>
-		<variable>
 			<name>CONTROLSUITE_DRV8312_ROOT</name>
 			<value>$%7BPARENT-2-CCS_INSTALL_ROOT%7D/controlSUITE</value>
-		</variable>
-		<variable>
-			<name>DRV830x_DMCLIB_MATH_BLOCK_ROOT</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/app_libs/motor_control/math_blocks/v3.1</value>
-		</variable>
-		<variable>
-			<name>DRV830x_F2803x_DEVICE_SUPPORT_ROOT</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/device_support/f2803x/v124</value>
-		</variable>
-		<variable>
-			<name>DRV830x_IQMATH_ROOT</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/math/IQmath/v15c</value>
-		</variable>
-		<variable>
-			<name>copy_PROJECT_LOC</name>
-			<value>$%7BCONTROLSUITE_DRV830x_ROOT%7D/aci_vector_control_F28035_DRV8301</value>
 		</variable>
 	</variableList>
 </projectDescription>
