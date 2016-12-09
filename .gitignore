@@ -23,5 +23,7 @@
 *.pdb
 
 # folders
-z_buff
+.launches
+.settings
 DRV8301_F2803x_RAM
+z_buff
